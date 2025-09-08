@@ -1,8 +1,6 @@
 import { posts } from "@/app/lib/placeholder-data";
 import Post from "@/app/ui/components/posts/Post";
 
-import React, { JSX } from "react";
-
 export default function Page({ params }: { params: { id: string } }) {
   const post = posts.find((post) => post.id === params.id);
   return (
